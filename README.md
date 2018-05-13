@@ -3,11 +3,13 @@
 
 | Version |
 |---------|
-| 0.3.0  |
+| 0.3.1  |
 
 <br>
 
 [**Turntable**](https://github.com/dmbdesignpdx/turntable) is an SCSS Library.
+
+Visit the wiki for [**Documentation**](https://github.com/dmbdesignpdx/turntable/wiki).
 
 <br>
 
@@ -22,7 +24,7 @@ yarn add -D turntable
 NPM:
 
 ```bash
-npm install -D turntable
+npm i -D turntable
 ```
 
 <br>
@@ -54,7 +56,7 @@ dj init --dry-run
 
 #### Build Turntable with Channel
 
-Create a **'.channel.yml'** file at the root:
+Create a **.channel.yml** file at the root:
 
 ```yaml
 
@@ -66,7 +68,7 @@ ie: <version support>
 And then run:
 
 ```bash
-dj mix
+dj adjust
 ```
 
 <br>
