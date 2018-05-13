@@ -9,25 +9,26 @@ vers = require("./lib/version.js"),
 
 tt = {
    sass: "0.1.0",
-   node: "0.1.0"
+   node: "0.2.0"
 }
 
-function arg(a,b) {
-	return -1 < process.argv.indexOf(a) || -1 < process.argv.indexOf(b)
+function arg(a) {
+	return -1 < process.argv.indexOf(a)
 }
 
 switch(true) {
-   case arg("init", "-i"):
+   case arg("init"):
       init.start(tt)
 		break
-	case arg("help", "?"):
+	case arg("help"):
 		help.start()
       break
-	case arg("adjust", "-a"):
+	case arg("adjust"):
 		mix.start(tt)
       break
-	case arg("version", "-v"):
+	case arg("version"):
 		vers.start(tt)
       break
-      default : process.stdout.write("[\x1b[35mTurntable\x1b[0m] Try using --help for command references\n")
+		default:
+		process.stdout.write(`[\x1b[35mTurntable\x1b[0m] Use "dj help" for command references\n`)
 }

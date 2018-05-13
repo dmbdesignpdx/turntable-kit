@@ -1,6 +1,6 @@
 {
    "name": "turntable-kit",
-   "version": "0.1.0",
+   "version": "0.2.0",
    "description": "Use Yarn or NPM to install and update your Turntable.",
    "main": "dj.js",
    "repository": {
