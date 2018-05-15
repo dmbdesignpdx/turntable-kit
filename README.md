@@ -1,9 +1,8 @@
 # Turntable Kit
 **Use Yarn or NPM to install and update your Turntable.**
 
-| Version |
-|---------|
-| 0.4.0  |
+![GitHub release](https://img.shields.io/github/release/dmbdesignpdx/turntable-kit.svg?style=for-the-badge)
+![Travis](https://img.shields.io/travis/dmbdesignpdx/turntable-kit.svg?style=for-the-badge)
 
 <br>
 
@@ -18,13 +17,13 @@ Visit the wiki for [**Documentation**](https://github.com/dmbdesignpdx/turntable
 Yarn:
 
 ```bash
-yarn add -D turntable
+yarn add -D turntable-kit
 ```
 
 NPM:
 
 ```bash
-npm i -D turntable
+npm i -D turntable-kit
 ```
 
 <br>
