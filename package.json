@@ -1,8 +1,8 @@
 {
    "name": "turntable-kit",
-   "version": "0.3.1",
+   "version": "0.4.0",
    "description": "Use Yarn or NPM to install and update your Turntable.",
-   "main": "dj.js",
+   "main": "index.js",
    "repository": {
 		"type": "git",
 		"url": "https://github.com/dmbdesignpdx/turntable-kit.git"
@@ -11,6 +11,6 @@
    "license": "MIT",
    "files": ["lib/*"],
    "bin": {
-      "dj": "./dj.js"
+      "dj": "./index.js"
    }
 }

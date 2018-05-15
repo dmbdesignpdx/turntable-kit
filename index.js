@@ -9,7 +9,7 @@ vers = require("./lib/version.js"),
 
 tt = {
    sass: "0.1.0",
-   node: "0.3.1"
+   node: "0.4.0"
 }
 
 function arg(a) {
