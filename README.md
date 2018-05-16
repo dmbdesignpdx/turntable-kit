@@ -1,5 +1,5 @@
 # Turntable Kit
-**Use Yarn or NPM to install and update your Turntable.**
+**Install, update, and adjust your Turntable.**
 
 ![GitHub release](https://img.shields.io/github/release/dmbdesignpdx/turntable-kit.svg?style=for-the-badge)
 ![Travis](https://img.shields.io/travis/dmbdesignpdx/turntable-kit.svg?style=for-the-badge)

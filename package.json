@@ -1,7 +1,7 @@
 {
    "name": "turntable-kit",
-   "version": "0.4.0",
-   "description": "Use Yarn or NPM to install and update your Turntable.",
+   "version": "0.5.0",
+   "description": "Install, update, and adjust your Turntable.",
    "main": "index.js",
    "repository": {
 		"type": "git",
