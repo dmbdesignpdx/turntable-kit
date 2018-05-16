@@ -2,33 +2,29 @@
 
 "use strict"
 
-const init = require("./lib/init.js"),
-mix = require("./lib/mix.js"),
-help = require("./lib/help.js"),
-vers = require("./lib/version.js"),
+const init = require("./lib/init"),
+adjust = require("./lib/adjust"),
+help = require("./lib/help"),
+vers = require("./lib/version")
 
-tt = {
-   sass: "0.1.0",
-   node: "0.4.0"
-}
 
-function arg(a) {
+function check(a) {
 	return -1 < process.argv.indexOf(a)
 }
 
 switch(true) {
-   case arg("init"):
-      init.start(tt)
+   case check("init"):
+      init()
 		break
-	case arg("help"):
-		help.start()
+	case check("help"):
+		help()
       break
-	case arg("adjust"):
-		mix.start(tt)
+	case check("adjust"):
+		adjust()
       break
-	case arg("version"):
-		vers.start(tt)
+	case check("version"):
+		vers()
       break
-		default:
+	default:
 		process.stdout.write(`[\x1b[35mTurntable\x1b[0m] Use "dj help" for command references\n`)
 }
