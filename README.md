@@ -12,40 +12,73 @@ Visit the wiki for [**Documentation**](https://github.com/dmbdesignpdx/turntable
 
 <br>
 
-### Install
+### Install locally
+
+```bash
+# Yarn
+yarn add -D turntable-kit
+
+# NPM
+npm i -D turntable-kit
+```
+
+### Or install globally for simple CLI
 
 Yarn:
 
 ```bash
-yarn add -D turntable-kit
+# Yarn
+yarn global add turntable-kit
+
+# NPM
+npm i -g turntable-kit
 ```
 
-NPM:
+<br>
+
+### Setup (local only)
+
+#### Utilize NPX
+This comes with NPM v5.2.0+
 
 ```bash
-npm i -D turntable-kit
+npx dj ...
+```
+
+#### Or add a script to your package.json
+
+```json
+"scripts": {
+	"dj": "dj"
+}
+```
+
+then use:
+
+```bash
+yarn run dj ...
+# or
+npm run dj ...
 ```
 
 <br>
 
-### Setup
+### Commands
 
-<br>
-
-#### Auto Initialize and Build
+#### Auto initialize and build
 
 ```bash
 dj init
 ```
 
 Input the following values:
-- Vendor prefix support: **[ 2011&ndash;2017 ]**
+- Vendor prefix support: **[ 2011&ndash;2018 ]**
 - IE version support: **[ 9 | 10 | 11 | none ]**
 - Path of directory: **&lt;where/you/want/turntable&gt;**
 
 <br>
 
-#### Preview Build
+#### Preview build
 
 ```bash
 dj init --dry-run
@@ -53,16 +86,14 @@ dj init --dry-run
 
 <br>
 
-#### Build Turntable with Channel
+#### Build Turntable with a Channel
 
-Create a **.channel.yml** file at the root:
+Manually create a **.channel.yml** file at the root:
 
 ```yaml
-
 path: <where/you/want/turntable>
 year: <vendor prefix support>
 ie: <version support>
-
 ```
 And then run:
 
@@ -72,7 +103,7 @@ dj adjust
 
 <br>
 
-#### Print Version
+#### Print version
 
 ```bash
 dj version
