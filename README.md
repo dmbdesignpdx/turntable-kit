@@ -22,7 +22,7 @@ yarn add -D turntable-kit
 npm i -D turntable-kit
 ```
 
-### Or install globally for simple CLI
+### Or install globally for CLI
 
 Yarn:
 
@@ -78,22 +78,16 @@ Input the following values:
 
 <br>
 
-#### Preview build (Deprectated)
-
-```bash
-dj init --dry-run
-```
-
-<br>
-
 #### Build Turntable with a Channel
 
-Manually create a **.channel.yml** file at the root:
+Manually create or edit **.channel.json** file at the root:
 
-```yaml
-path: <where/you/want/turntable>
-year: <vendor prefix support>
-ie: <version support>
+```json
+{
+	"path": "<where/you/want/turntable>",
+	"year": "<vendor prefix support>",
+	"ie": "<version support>"
+}
 ```
 And then run:
 
@@ -101,17 +95,12 @@ And then run:
 dj adjust
 ```
 
-#### .channel.yml is deprecated
-But it will still work until v0.6.0.
+<br>
 
-Replacing it will be **.channel.json**. You can create one now for the next version if you want:
+#### Fetch the latest SCSS file
 
-```js
-{
-	"path": "<where/you/want/turntable>",
-	"year": "<vendor prefix support>",
-	"ie": "<version support>"
-}
+```bash
+dj update
 ```
 
 <br>

@@ -5,16 +5,17 @@
 const init = require("./lib/init"),
 adjust = require("./lib/adjust"),
 help = require("./lib/help"),
-vers = require("./lib/version")
+vers = require("./lib/version"),
+update = require("./lib/update")
 
 
-function check(a) {
-	return -1 < process.argv.indexOf(a)
+function check(arg) {
+	return -1 < process.argv.indexOf(arg)
 }
 
 switch(true) {
    case check("init"):
-      init()
+		init()
 		break
 	case check("help"):
 		help()
@@ -24,7 +25,10 @@ switch(true) {
       break
 	case check("version"):
 		vers()
-      break
+		break
+	case check("update"):
+		update()
+		break
 	default:
 		process.stdout.write(`[\x1b[35mTurntable\x1b[0m] Use "dj help" for command references\n`)
 }
