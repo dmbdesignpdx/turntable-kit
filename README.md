@@ -78,7 +78,7 @@ Input the following values:
 
 <br>
 
-#### Preview build
+#### Preview build (Deprectated)
 
 ```bash
 dj init --dry-run
@@ -99,6 +99,19 @@ And then run:
 
 ```bash
 dj adjust
+```
+
+#### .channel.yml is deprecated
+But it will still work until v0.6.0.
+
+Replacing it will be **.channel.json**. You can create one now for the next version if you want:
+
+```js
+{
+	"path": "<where/you/want/turntable>",
+	"year": "<vendor prefix support>",
+	"ie": "<version support>"
+}
 ```
 
 <br>
