@@ -1,4 +1,14 @@
-# Turntable-Kit Change Log
+# Turntable-Kit Changelog
+
+## 0.6.2
+
+Bug fixes:
+- fixed an issue with `process.stdin` not responding
+
+## 0.6.1
+
+Bug fixes:
+- fixed an issue with creating sub-directories
 
 ## 0.6.0
 
