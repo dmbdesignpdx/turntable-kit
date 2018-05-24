@@ -1,5 +1,13 @@
 # Turntable-Kit Changelog
 
+## 0.6.3
+
+Bug fixes:
+- fixed channel output of "99" with init
+
+Edits:
+- updated `help` output text
+
 ## 0.6.2
 
 Bug fixes:
