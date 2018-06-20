@@ -1,5 +1,18 @@
 # Turntable-Kit Changelog
 
+## 0.7.0
+6/20/18
+
+New Features:
+- adds both YAML and JSON support for Channel
+
+Bug fixes:
+- fixed `adjust` not updating year
+
+Edits:
+- better error handling
+- housekeeping
+
 ## 0.6.4
 
 Bug fixes:

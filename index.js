@@ -10,7 +10,7 @@ update = require("./lib/update")
 
 
 function check(arg) {
-	return -1 < process.argv.indexOf(arg)
+	return process.argv.includes(arg)
 }
 
 switch(true) {

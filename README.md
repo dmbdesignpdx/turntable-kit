@@ -72,15 +72,28 @@ dj init
 ```
 
 Input the following values:
-- Vendor prefix support: **[ 2011&ndash;2018 ]**
-- IE version support: **[ 9 | 10 | 11 | none ]**
-- Path of directory: **&lt;where/you/want/turntable&gt;**
+- Channel format: **[YAML or JSON]** (default: YAML)
+- Vendor prefix support: **[ 2011&ndash;2018 ]** (default: 2011)
+- IE version support: **[ 9 | 10 | 11 | none ]** (default: 9)
+- Path of directory: **&lt;where/you/want/turntable&gt;** (default: project root)
+
+You can just hit `enter` for the **default** value.
 
 <br>
 
 #### Build Turntable with a Channel
 
-Manually create or edit **.channel.json** file at the root:
+Manually create/edit a **.channel.yml** or **.channel.json** file at the root:
+
+YAML:
+
+```yaml
+path: <where/you/want/turntable>
+year: <vendor prefix support>
+ie: <version support>
+```
+
+JSON:
 
 ```json
 {
@@ -89,6 +102,7 @@ Manually create or edit **.channel.json** file at the root:
 	"ie": "<version support>"
 }
 ```
+
 And then run:
 
 ```bash
