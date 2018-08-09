@@ -1,9 +1,15 @@
 # Turntable-Kit Changelog
 
+## 0.7.1
+8/8/18
+
+Bug fixes:
+- fixed `update` problem with `ie: none`
+
 ## 0.7.0
 6/20/18
 
-New Features:
+New features:
 - adds both YAML and JSON support for Channel
 
 Bug fixes:
@@ -37,7 +43,7 @@ Bug fixes:
 
 ## 0.6.0
 
-New Features:
+New features:
 - `update`: will check for a newer version of the library and fetch it
 - **.channel.json**
 
